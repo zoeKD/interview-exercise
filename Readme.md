@@ -1,5 +1,8 @@
 # Objective
 
+You should spend 3h in total. Please send you code and notes 3h after starting the exercise.
+We will debrief for about 1h, in the days following the exercise session.
+
 ## Part one (code)
 
 The goal of the exercise is to handle incoming http requests containing a json object, and insert them into the database.
@@ -19,6 +22,8 @@ How would you handle this ?
 - What SQL features/functions should we allow at first ?
 - How to represent/parse a query to keep typing ?
 - Please share your thoughts, ideas as best as you can, without focusing too much on the form. We'll debrief this together after the exercise.
+
+# Indications
 
 ### Interacting with the db
 
