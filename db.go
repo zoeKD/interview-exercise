@@ -37,6 +37,7 @@ func setupDbSchema(conn *pgx.Conn) error {
 		id uuid DEFAULT uuid_generate_v4(),
 		object_id VARCHAR NOT NULL,
 		updated_at TIMESTAMP WITH TIME ZONE NOT NULL,
+		isLiveVersion BOOLEAN DEFAULT FALSE,
 		amount integer,
 		account_id VARCHAR,
 		bic_country VARCHAR,

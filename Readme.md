@@ -1,9 +1,9 @@
 # Objective
 
-You should spend 3h in total. Please send you code and notes 3h after starting the exercise.
+You should spend 3h in total. Please send your code and notes 3h after starting the exercise.
 We will debrief for about 1h, in the days following the exercise session.
 
-## Part one (code)
+## Part one
 
 The goal of the exercise is to handle incoming http requests containing a json object, and insert them into the database.
 The twist is that the database schema is known only at runtime (not statically), because it corresponds to a customer's specific data schema.
@@ -11,17 +11,15 @@ The target data schema to use for this exercise is defined in the main function,
 
 We want to have some level of input validation: type (int, float, string, bool, timestamp), format, enums, required/nullable at least. Do you have other ideas ?
 
-- Stretch/optional: keep a history of object versions. How would you handle it ?
+We also want to keep a history of all versions of the object. Your code should insert the new object only if its 'updatedAt' value is greater than the previous, and keep the 'isLiverVersion' field up to date for all entries.
 
-## Part two (Brainstorming/no code)
+## Part two
 
-Now, we want to build a simple tool that runs SQL queries against the customer's database, using a no-code SQL builder. We need the output to be strongly typed.
-How would you handle this ?
+Please design an API that allows you to create and evaluate a mathematcal formula (on floats), using a tree. The tree's leaves should be constant numbers, and the tree's nodes should be mathematical operators.
+Please implement at least 3 different operators, including a binary (e.g. division) and an n-ary operator (e.g. sum).
+The tree should be created and evaluated separately.
 
-- ! Disclaimer: Feature not yet released, think of it as a brainstorming/discussion that you could have in one of your first weeks at Marble. This is not supposed to be a simple question nor a « trick » exercise.
-- What SQL features/functions should we allow at first ?
-- How to represent/parse a query to keep typing ?
-- Please share your thoughts, ideas as best as you can, without focusing too much on the form. We'll debrief this together after the exercise.
+Stretch goal: make the tree serializable in json format.
 
 # Indications
 
